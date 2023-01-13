@@ -1,0 +1,164 @@
+body{
+    background-color: white;
+}
+/* product info home page */
+.res-img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.home-info{
+padding-top: 30px;
+padding-bottom: 15px;
+}
+
+.in-home-info{
+   
+    padding: 10px;
+  
+}
+.pd{
+ 
+    padding-bottom: 10px;
+}
+.pro{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border:1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(252, 250, 244);
+    box-shadow: 2px 2px 10px black;
+}
+
+#rating-pro{
+    font-size: 15px;
+    padding: 5px;    
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.pro_info{
+    padding: 5px;
+    vertical-align: middle;
+
+}
+p{
+    text-decoration:none !important;
+    text-transform: capitalize;
+}
+.product_name{
+    color:black !important;
+    text-decoration: none !important;
+}
+.product_name:hover{
+color:rgb(18, 15, 207) !important;
+font-weight: bold !important;
+}
+
+@media screen and (min-width:425px) {
+    
+    .pro{
+        overflow: auto;
+    }
+    .pro_img{
+        width:25%;
+        float:left;
+    }
+
+    .pro_info{
+        width:70%;
+        float:right;
+    }
+}
+
+
+
+
+/* Product Container */
+
+.rate-block{
+display: flex;
+justify-content: space-between;
+margin-top: 5px;
+padding: 10px 20px;
+justify-content: center;
+}
+
+.rate{
+    display:block;
+    text-align: center;
+color: #d11243;
+}
+
+.btn-atc{
+background-color: #d11243;
+color:white;
+
+font-weight: 700;
+border: 1px solid  #d11243;
+padding: 2px 10px;
+border-radius: 5px;
+}
+
+.card-text {
+    text-align: center;
+    word-wrap: normal;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 2px;
+    border-top: 1px solid;
+}
+
+.product-img {
+    height: 10.875rem !important;
+    
+}
+
+@media screen and (min-width:425px){
+    
+    .product-img {
+        height: 11.875rem !important;
+    }
+    
+}
+
+
+
+
+
+
+
+ .card-body p {
+    margin-top: 0.5rem !important;
+   
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(66, 28, 28, 0.31);
+    border-radius: 0.25rem;
+    box-shadow: 4px 6px 7px #949090;
+   
+}
+
+.card:hover{
+    box-shadow: 1px 2px 2px #05c722;
+}
+
+
