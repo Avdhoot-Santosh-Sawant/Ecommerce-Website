@@ -1,15 +1,17 @@
 import express from 'express'
 import Razorpay from 'razorpay'
 import crypto from 'crypto'
+import dotenv from 'dotenv'
+dotenv.config()
 
 
 const router = express.Router()
 
 const order = (req, res) => {
-    try {
+	try {
 		const instance = new Razorpay({
-			key_id: "rzp_test_SJIRcR6C1j6Yn0",
-			key_secret: "xmFkJbwJ8hUj6EbHNTj3NPro",
+			key_id: process.env.key_id,
+			key_secret: process.env.key_secret,
 		});
 
 		const options = {
@@ -40,12 +42,12 @@ const paymentVerify = async (req, res) => {
 			.createHmac("sha256", 'xmFkJbwJ8hUj6EbHNTj3NPro')
 			.update(sign.toString())
 			.digest("hex");
-			// console.log(razorpay_signature);
-			// console.log(expectedSign);
+		// console.log(razorpay_signature);
+		// console.log(expectedSign);
 
 		if (razorpay_signature === expectedSign) {
 			return res.status(200).json({ message: "Payment verified successfully" });
-			
+
 		} else {
 			return res.status(400).json({ message: "Invalid signature sent!" });
 		}
@@ -58,8 +60,8 @@ const paymentVerify = async (req, res) => {
 
 
 //API Routes
-router.post('/order',order);
-router.post('/paymentVerify',paymentVerify)
+router.post('/order', order);
+router.post('/paymentVerify', paymentVerify)
 
 
 export default router;
