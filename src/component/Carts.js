@@ -159,7 +159,8 @@ export default function Carts(props) {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "/api/payment/paymentVerify";
+          const verifyUrl =
+            "https://just-poultry-things.onrender.com/api/payment/paymentVerify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
           alert(data.message);
@@ -203,7 +204,8 @@ export default function Carts(props) {
     if (auth) {
       if (authData.name && authData.mobile && authData.email) {
         try {
-          const orderURL = "/api/payment/order";
+          const orderURL =
+            "https://just-poultry-things.onrender.com/api/payment/order";
           const { data } = await axios.post(orderURL, { amount: total_price });
           console.log(data);
           initPayment(data.data);
