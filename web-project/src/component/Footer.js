@@ -25,6 +25,7 @@ export default function Footer() {
                   <a
                     href="https://avdhoot-santosh-sawant.netlify.app/"
                     target="_black"
+                    rel="noreferrer"
                     style={{ color: "white" }}
                   >
                     Developer Profile
