@@ -28,7 +28,10 @@ export default function SignIn(props) {
       loading.style.display = "grid";
 
       try {
-        const res = await axios.post("/SignIn", cheakUser);
+        const res = await axios.post(
+          "https://just-poultry-things.onrender.com/SignIn",
+          cheakUser
+        );
         loading.style.display = "none";
         // console.log(res.data)
         if (

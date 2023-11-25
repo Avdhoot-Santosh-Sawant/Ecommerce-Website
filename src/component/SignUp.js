@@ -32,7 +32,10 @@ export default function SignIn(props) {
 
       try {
         loading.style.display = "grid";
-        const res = await axios.post("/SignUp", userObj);
+        const res = await axios.post(
+          "https://just-poultry-things.onrender.com/SignUp",
+          userObj
+        );
         loading.style.display = "none";
         if (
           res.data === "email already present" ||

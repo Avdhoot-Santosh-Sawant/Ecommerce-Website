@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "proxy": "https://just-poultry-things.onrender.com",
-  "options": {
-    "proxy": "https://just-poultry-things.onrender.com"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

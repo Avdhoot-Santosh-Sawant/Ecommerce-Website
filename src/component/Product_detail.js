@@ -58,7 +58,10 @@ export default function ProductDetail(props) {
       };
 
       try {
-        const res = await axios.put("/products", sentPut);
+        const res = await axios.put(
+          "https://just-poultry-things.onrender.com/products",
+          sentPut
+        );
 
         if (res.body === "error occured at server side") {
           alert(res.body);

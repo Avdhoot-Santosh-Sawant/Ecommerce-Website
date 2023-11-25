@@ -100,7 +100,10 @@ export default function Carts(props) {
       };
 
       try {
-        const res = await axios.put("/carts", sentPut);
+        const res = await axios.put(
+          "https://just-poultry-things.onrender.com/carts",
+          sentPut
+        );
 
         if (res.body === "error occured at server side") {
           alert(res.body);
