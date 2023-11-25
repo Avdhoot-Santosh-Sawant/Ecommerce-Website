@@ -40,7 +40,7 @@ body {
   padding: 5px;
   margin: auto;
   background-color: white;
-  max-height: 350px;
+  max-height: 55vh;
   overflow-y: scroll;
   background-color: rgb(221, 235, 248);
 }

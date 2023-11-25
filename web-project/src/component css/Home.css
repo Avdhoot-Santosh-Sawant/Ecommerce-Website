@@ -1,132 +1,162 @@
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 /* responsive front image */
 
-.home-c1{
-    position: relative;
-    top:5px;
+.home-c1 {
+  position: relative;
+  top: 5px;
+}
+.in-home-info {
+  max-width: 50%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #quote {
-    position: absolute;
-    z-index: 60 !important;
-    font-size: 40px;
-    text-shadow: rgb(211, 12, 178) 2px 2px 5px;
-    line-height: 1.2;
-    overflow: hidden;
-    top: 50px;
-    font-weight: 800;
-    color:  rgb(10, 10, 10);   
-    display: inline-block;
-
+  position: absolute;
+  z-index: 60 !important;
+  font-size: 40px;
+  text-shadow: rgb(211, 12, 178) 2px 2px 5px;
+  line-height: 1.2;
+  overflow: hidden;
+  top: 50px;
+  font-weight: 800;
+  color: rgb(10, 10, 10);
+  display: inline-block;
 }
 
-@media screen and (max-width:1000px){
-    
-#quote {
-    
+.pd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #quote {
     font-size: 30px;
     text-shadow: rgb(211, 12, 178) 3px 2px 5px;
     line-height: 1.2;
     overflow: hidden;
     top: 50px;
     font-weight: 700;
-    color:  rgb(10, 10, 10);   
+    color: rgb(10, 10, 10);
     display: inline-block;
-
+  }
 }
+
+@media screen and (max-width: 800px) {
+  #quote {
+    font-size: 20px;
+    text-shadow: rgb(211, 12, 178) 3px 2px 5px;
+    line-height: 1.2;
+    overflow: hidden;
+    top: 30px;
+    font-weight: 900;
+    color: rgb(10, 10, 10);
+    display: inline-block;
+  }
+
+  .in-home-info {
+    max-width: 100%;
+    margin-left: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width:800px){
-    
-    #quote {
-        
-        font-size: 20px;
-        text-shadow: rgb(211, 12, 178) 3px 2px 5px;
-        line-height: 1.2;
-        overflow: hidden;
-        top: 30px;
-        font-weight: 900;
-        color:  rgb(10, 10, 10);   
-        display: inline-block;
-    
-    }
-    }
-
-
-@media screen and (max-width:500px){
-    
-    #quote {
-        
-        font-size: 16px;
-        text-shadow: rgb(243, 8, 8) 1px 1px;
-        line-height: 1.2;
-        overflow: hidden;
-        top: 20px;
-        letter-spacing: 1px;
-        font-weight: 900;
-        color: rgb(228, 252, 10);  
-        display: inline-block;
-    
-    }
-    }
-
-
-
-
-
-
+@media screen and (max-width: 500px) {
+  #quote {
+    font-size: 16px;
+    text-shadow: rgb(243, 8, 8) 1px 1px;
+    line-height: 1.2;
+    overflow: hidden;
+    top: 20px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: rgb(228, 252, 10);
+    display: inline-block;
+  }
+}
 
 /* product info home page */
-.res-img{
-    width: 100%;
+.res-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.home-info {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.in-home-info {
+  padding: 10px;
+}
+.pd {
+  padding-bottom: 10px;
+  max-width: 1200px;
+}
+.pro {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(252, 250, 244);
+  box-shadow: 2px 2px 10px black;
+}
+
+.pro_info {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.pro {
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .pro_img {
+    width: 50%;
+    float: none;
+    margin-left: 25%;
     margin-bottom: 10px;
+  }
+
+  .pro_info {
+    width: 80%;
+    margin-left: 10%;
+    float: none;
+  }
 }
 
-.home-info{
-padding-top: 30px;
-padding-bottom: 15px;
+@media screen and (max-width: 425px) {
+  .pro_img {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    float: none;
+  }
+
+  .pro_info {
+    width: 90%;
+    float: none;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
 }
 
-.in-home-info{
-   
-    padding: 10px;
-  
+@media screen and (min-width: 700px) {
+  .pro_img {
+    width: 25%;
+    float: left;
+  }
+  .pro_info {
+    width: 70%;
+    float: right;
+  }
 }
-.pd{
- 
-    padding-bottom: 10px;
-}
-.pro{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border:1px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: rgb(252, 250, 244);
-    box-shadow: 2px 2px 10px black;
-}
-
-.pro_info{
-    padding: 5px;
-    vertical-align: middle;
-
-}
-
-@media screen and (min-width:425px) {
-    
-    .pro{
-        overflow: auto;
-    }
-    .pro_img{
-        width:25%;
-        float:left;
-    }
-
-    .pro_info{
-        width:70%;
-        float:right;
-    }
-}
-

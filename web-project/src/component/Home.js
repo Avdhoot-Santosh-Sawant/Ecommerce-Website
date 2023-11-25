@@ -1,68 +1,83 @@
 import React from "react";
 import "../component css/Home.css";
-import KeyFeature from './KeyFeature'
+import KeyFeature from "./KeyFeature";
 import Footer from "./Footer";
-
 
 // done
 
-function HomeImages(){
-
+function HomeImages() {
   return (
     <>
- <div className=" h-75">
-
- <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
- 
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="/images/img1.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-        
-        <p style={{color:"gold",backgroundColor:'#241f1fa8'}}>Chickens And Eggs Are Best,When They Are Fresh</p>
+      <div className=" h-75">
+        <div
+          id="carouselExampleCaptions"
+          className="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="/images/img1.jpg" className="d-block w-100" alt="..." />
+              <div className="carousel-caption d-none d-md-block">
+                <p style={{ color: "gold", backgroundColor: "#241f1fa8" }}>
+                  Chickens And Eggs Are Best,When They Are Fresh
+                </p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src="/images/img2.jpg" className="d-block w-100" alt="..." />
+              <div className="carousel-caption d-none d-md-block">
+                <p style={{ color: "gold", backgroundColor: "#241f1fa8" }}>
+                  Order fresh chicken and egg from justPoetryThings now!
+                </p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src="/images/img3.jpg" className="d-block w-100" alt="..." />
+              <div className="carousel-caption d-none d-md-block">
+                <p style={{ color: "gold", backgroundColor: "#241f1fa8" }}>
+                  Our Chicken and Eggs are 100% fresh and safe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </div>
-    <div className="carousel-item">
-      <img src="/images/img2.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-       
-        <p style={{color:"gold",backgroundColor:'#241f1fa8'}}>Order fresh chicken and egg from justPoetryThings now!</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="/images/img3.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-             <p style={{color:"gold",backgroundColor:'#241f1fa8'}}>Our Chicken and Eggs are 100% fresh and safe.</p>
-      </div>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-
- </div>
     </>
-  )
+  );
 }
 
 export default function Home() {
   return (
     <>
+      <HomeImages />
 
-        <HomeImages/>
-
-        {/* <KeyFeature/> */}
-
-
+      {/* <KeyFeature/> */}
 
       {/* home */}
-
 
       <div id="Home" style={{ display: "block" }}>
         {/* front image */}
@@ -83,9 +98,10 @@ export default function Home() {
           <div className="in-home-info">
             <h3
               style={{
-                color: "rgb(199, 15, 15)",
+                color: "blue",
                 fontWeight: 700,
                 textAlign: "center",
+                marginBottom: "20px",
               }}
             >
               About justPoetryThings
@@ -103,7 +119,7 @@ export default function Home() {
           <div className="in-home-info">
             <h3
               style={{
-                color: "rgb(199, 15, 15)",
+                color: "orange",
                 fontWeight: 700,
                 textAlign: "center",
               }}
@@ -184,9 +200,9 @@ export default function Home() {
               <div className="pro_info">
                 <p>
                   justPoetryThings is a shop for all your fresh and processed
-                  chicken needs. We sell fresh, hygienic and
-                  processed chicken. We sell wide variety of ready to eat
-                  Delicious chicken products to cater to every requirement.
+                  chicken needs. We sell fresh, hygienic and processed chicken.
+                  We sell wide variety of ready to eat Delicious chicken
+                  products to cater to every requirement.
                 </p>
               </div>
             </div>
@@ -198,4 +214,3 @@ export default function Home() {
     </>
   );
 }
-

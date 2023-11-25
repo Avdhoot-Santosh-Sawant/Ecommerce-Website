@@ -1,64 +1,99 @@
+.outer-sign-in-con {
+  width: 95%;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid rgb(43, 134, 219);
+  border-radius: 10px;
+  box-shadow: 0px 5px 6px black;
+  background-color: white;
+}
+.text-header {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.lable {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
 
-.outer-sign-in-con{
+#sign-in-email,
+#sign-in-password {
+  margin-bottom: 2px;
+  width: 100%;
+  border: 1px solid rgb(160, 151, 151);
+  border-radius: 5px;
+  padding: 5px;
+}
+.text-header {
+  text-align: center;
+}
 
-    width:95%;
-    margin:auto;
-    padding: 15px;
-    border: 1px solid rgb(43, 134, 219);
-    border-radius: 10px;
-    box-shadow:0px 5px 6px black;
-    background-color: white;
-    
-    }
-    .text-header{
-        margin-bottom: 20px;
-        font-weight: 700;
-    }
-    .lable{
-        font-size: 20px; 
-        margin-bottom: 5px;
-        font-weight: 700;
-        
-    }
-    
-    #sign-in-email,
-    #sign-in-password{
-        margin-bottom: 2px;
-        width:100%;
-        border: 1px solid rgb(160, 151, 151);
-        border-radius: 5px;
-        padding: 5px;
-    }
-    .text-header{
-        text-align: center;
-    }
-    
-    
-    #sign-in{
-        border:1px solid blue !important;
-        background-color: blue !important;
-        display:inline-block;
-        width:80%;padding: 5px;
-        border-radius: 10px;
-        color: white;
-        margin-left: 10%;
-        font-weight: 700;
-        margin-top: 20px;
-    }
-    
-    #sign-up-btn{
-        display: inline-block;
-        color: blue;
-        font-weight: 600;
-    }
-    
-    
-    @media screen and (min-width:500px) {
-        
-         .outer-sign-in-con{
-            width: 500px;
-         }
-    
-    
-    
-    }
+#sign-in {
+  border: 1px solid blue !important;
+  background-color: blue !important;
+  display: inline-block;
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 10%;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+#sign-up-btn {
+  display: inline-block;
+  color: blue;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 500px) {
+  .outer-sign-in-con {
+    width: 500px;
+  }
+}
+
+/* loading animation */
+
+#full-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 179, 12, 0.4);
+  z-index: 10;
+  display: none;
+  top: 0px;
+
+  place-items: center;
+  left: 0px;
+}
+
+.loading {
+  width: 150px;
+  height: 150px;
+  border-top: 5px solid rgb(0, 60, 255);
+  border-bottom: 5px solid red;
+  display: inline-block;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  align-items: center;
+  position: relative;
+  animation-name: rotateLoading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateLoading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

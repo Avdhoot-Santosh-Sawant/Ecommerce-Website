@@ -2,10 +2,9 @@
   "name": "web-project",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000/",
+  "proxy": "https://just-poultry-things.onrender.com",
   "options": {
-    "allowedHosts": ["localhost", ".localhost"],
-    "proxy": "http://localhost:8000/"
+    "proxy": "https://just-poultry-things.onrender.com"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
