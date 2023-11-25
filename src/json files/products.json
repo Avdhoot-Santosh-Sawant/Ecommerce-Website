@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "product_img": "/whiteeggs.jpg",
+    "product_name": "White Eggs",
+    "short_desc": "One egg has only 75 calories but 7 grams of high-quality protein, 5 grams of fat, and 1.6 grams of saturated fat, along with iron, vitamins, minerals, and carotenoids.",
+    "quantity": 12,
+    "price": 60,
+    "type": "egg",
+    "rating": 4
+  },
+
+  {
+    "id": 2,
+    "product_img": "/brownEgg.png",
+    "product_name": "Brown Eggs",
+    "short_desc": "Brown eggs come from hens that are not injected with artificial hormones and medicines.Another reason for brown eggs being healthy is that they are devoid of any artificial hormones or chemicals",
+    "quantity": "12",
+    "price": 130,
+    "type": "egg",
+    "rating": 3
+  },
+
+  {
+    "id": 3,
+    "product_img": "/powerEggs.png",
+    "product_name": "Power Eggs",
+    "short_desc": "These Power Eggs are enriched with Selenium which makes them more nutritious than other available eggs.These eggs, packed with immune-supporting selenium, are one of the vital trace minerals essential for everyday health that is lacking in regular diets",
+    "quantity": "12",
+    "price": 130,
+    "type": "egg",
+    "rating": 5
+  },
+
+  {
+    "id": 4,
+    "product_img": "/nutriMoreEgg.jpg",
+    "product_name": "Nutrimore Eggs",
+    "short_desc": "It's a premium quality product which specifically natural. Its name itself defines its nutrient quality as it has dark orange yolk and transparent albumen.",
+    "quantity": "12 eggs",
+    "price": 140,
+    "type": "egg",
+    "rating": 5
+  },
+
+  {
+    "id": 5,
+    "product_img": "/drumstick.jpg",
+    "product_name": "Drumstick",
+    "short_desc": "Chicken drumsticks are greatly juicier than chicken breasts and it can be consumed in whole, as deep fried, shallow fried, roasted or in casseroles and stews. 5pcs",
+    "quantity": "500",
+    "price": 245,
+    "type": "chicken",
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "product_img": "/breastBoneless.jpg",
+    "product_name": "Breast Boneless",
+    "short_desc": "These fresh-from-the-farm chicken breasts are trimmed and deboned So whether youre whipping up a quick salad or delicious soup or even a main course meal.",
+    "quantity": "300",
+    "price": 175,
+    "type": "chicken",
+    "rating": 5
+  },
+  {
+    "id": 7,
+    "product_img": "/curryCut.jpg",
+    "product_name": "Chicken Curry Cuts",
+    "short_desc": "A complementary mix of both white and dark, skinned, bone in meat, chicken curry cut is ideal to get a taste of soft and comparatively tougher meat all packed in one dish.",
+    "quantity": "500",
+    "price": 165,
+    "type": "chicken",
+    "rating": 3
+  },
+
+  {
+    "id": 8,
+    "product_img": "/boneless.jpg",
+    "product_name": "Chicken Boneless",
+    "short_desc": "This dark meat is juicy, tender, and has a smooth texture. Boneless thigh cuts have more fat as compared to leaner cuts, like chicken breasts",
+    "quantity": "450",
+    "price": 255,
+    "type": "chicken",
+    "rating": 4
+  },
+
+  {
+    "id": 9,
+    "product_img": "/ChickenLegs.jpg",
+    "product_name": "Chicken Leg",
+    "short_desc": "Chicken Leg can be an ideal cut for a wholesome meal. Perfect for slow-cooking, Chicken Leg can also be baked, grilled, or braised. When cooked, Chicken Leg turns juicy and succulent. 10 pcs",
+    "quantity": "350",
+    "price": 160,
+    "type": "chicken",
+    "rating": 5
+  },
+
+  {
+    "id": 10,
+    "product_img": "/chicken65.png",
+    "product_name": "Chicken 65",
+    "short_desc": "For an easy meal Tawa-frying them, having a quick roast, or grilling them to make the perfect snacks.",
+    "quantity": "500",
+    "price": 175,
+    "type": "chicken",
+    "rating": 3
+  },
+
+  {
+    "id": 11,
+    "product_img": "/wholeChicken.jpg",
+    "product_name": "Whole Chicken",
+    "short_desc": "Chicken is used to make soups, vindaloos, kebabs, biryani and curries. It is used in salads, sandwiches, burgers and the likes. It is low in cholesterol and fat and is carb-free",
+    "quantity": "500",
+    "price": 180,
+    "type": "chicken",
+    "rating": 4
+  },
+
+  {
+    "id": 12,
+    "product_img": "/liver.jpg",
+    "product_name": "Chicken Liver",
+    "short_desc": "Chicken liver is conserved as one of the superfoods of nature. It is packed with essential nutrients. It contains a high dose of iron and vitamins, making it beneficial for the body.This comes in 15-20 pieces which are enough for 4-6 people.",
+    "quantity": "500",
+    "price": 220,
+    "type": "chicken",
+    "rating": 5
+  }
+]

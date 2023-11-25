@@ -1,0 +1,253 @@
+/* navbar  */
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000 !important;
+}
+
+#user-display {
+  display: inline-block;
+}
+
+.user-op {
+  text-align: center;
+  cursor: pointer;
+}
+
+#outer {
+  display: none;
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+.navbar-custom {
+  width: 100%;
+  background-color: black;
+  height: 50px !important;
+}
+
+.navbar-logo {
+  height: inherit;
+  float: left;
+}
+
+#logo-img {
+  height: inherit !important;
+  vertical-align: top;
+  float: left;
+}
+
+.logo-name {
+  color: gold;
+  margin-left: 10px;
+  padding: 2px;
+  font-size: 20px;
+  vertical-align: center !important;
+  height: inherit;
+  text-align: center;
+  display: inline-block;
+  font-weight: 900;
+  text-align: center;
+  font-weight: 700;
+}
+
+.nav-collapse1 {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.navbar-link {
+  height: inherit;
+  float: left;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  background-color: black;
+}
+
+.navbar-link p {
+  display: inline-block;
+  height: inherit;
+  color: white;
+  background-color: black;
+
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 20px;
+  border-width: 0px !important;
+  margin-bottom: 0px !important;
+  border-radius: 0px;
+  margin-top: 2px;
+}
+
+.active-nav-link {
+  display: block;
+  color: rgb(19, 6, 6) !important;
+  text-decoration: none;
+}
+
+.nav-collapse2 {
+  float: right;
+  margin-right: 2%;
+  height: inherit;
+  padding: 8px;
+}
+
+.btn-cart,
+.btn-login {
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2px 10px;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+
+.btn-cart {
+  padding-right: 25px !important;
+}
+#no_cart {
+  position: absolute;
+  bottom: 12px;
+  right: -10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: black !important;
+
+  width: 25px;
+  border: 1px solid yellow;
+  text-align: center;
+
+  background-color: rgb(23, 250, 23);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.small-screen-nav {
+  display: none;
+  float: right;
+  gap: 1vw;
+}
+
+#cart-img,
+#login,
+#three-bars {
+  margin-top: 2px;
+  width: 35px;
+  border: 1px solid yellow;
+  text-align: center;
+  padding: 6px 8px;
+  background-color: rgb(66, 192, 27);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.auth-sm-login-icon {
+  font-weight: 700;
+  font-size: 16px;
+  color: black !important;
+  margin-top: 2px;
+  width: 35px;
+  border: 1px solid yellow;
+  text-align: center;
+  padding: 6px 8px;
+  background-color: rgb(66, 192, 27);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* dropdown three bars click */
+
+.container-dropdown {
+  position: fixed;
+  top: 50px;
+  width: 0%;
+  z-index: 1000 !important;
+  clear: both;
+  display: none;
+}
+
+.container-dropdown ul {
+  padding-left: 0px !important;
+  background-color: aqua;
+}
+
+#list {
+  font-size: 25px;
+  text-align: center;
+  background-color: white;
+  display: inherit;
+  font-weight: 800;
+}
+
+#list li {
+  list-style-type: none;
+  color: rgb(8, 8, 8);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid white;
+}
+
+#home-mobile,
+#product-mobile {
+  color: rgb(8, 8, 8) !important;
+}
+
+#list li:hover {
+  border: 1px solid blue;
+  background-color: rgb(182, 175, 175);
+}
+
+#con-close {
+  display: block;
+  background-color: white;
+  height: 35px;
+}
+
+#btn-close {
+  color: white;
+  width: 39px;
+  margin-right: 15px;
+  float: right;
+  padding: 5px 10px;
+  height: inherit;
+}
+
+.visible-nav {
+  height: inline;
+  position: fixed;
+  top: 50px;
+  display: block;
+  transition: 0.5s;
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .nav-collapse1,
+  .nav-collapse2 {
+    display: none;
+  }
+
+  .small-screen-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #inner {
+    display: none;
+  }
+
+  #outer {
+    display: block;
+  }
+}

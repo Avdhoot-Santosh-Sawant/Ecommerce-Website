@@ -1,0 +1,35 @@
+.border-end {
+  border-right: 1px solid #121313 !important;
+}
+
+#btn-atc {
+  width: 200px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid green;
+  background-color: rgb(11, 230, 11);
+  font-weight: 700;
+  display: block;
+  float: right;
+  border-radius: 10px;
+}
+
+.container-custom {
+  width: 98%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.checked {
+  color: rgb(243, 160, 7);
+  font-weight: 900;
+}
+.desc {
+  padding: 2px 5px;
+}
+
+.product-action-btn {
+  margin-top: 10px;
+  overflow: auto;
+}

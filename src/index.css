@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* font for p tag */
+p {
+  margin-bottom: 0px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  p,
+  .in-home-info li {
+    font-size: 19px;
+
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1200px) {
+  p,
+  .in-home-info li {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
