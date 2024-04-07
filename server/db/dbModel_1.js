@@ -5,6 +5,7 @@ dotenv.config();
 
 // const dburl='mongodb://localhost:27017/justPoultryThings'
 const dburl = process.env.DATABASE
+console.log(dburl)
 mongoose.connect(dburl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
