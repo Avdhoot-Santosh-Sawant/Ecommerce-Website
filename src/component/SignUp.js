@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../component css/SignUp.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import config from "../config";
 
 export default function SignIn(props) {
   const [name, setName] = useState("");
@@ -32,10 +33,7 @@ export default function SignIn(props) {
 
       try {
         loading.style.display = "grid";
-        const res = await axios.post(
-          "https://just-poultry-things.onrender.com/SignUp",
-          userObj
-        );
+        const res = await axios.post(config.path + "/SignUp", userObj);
         loading.style.display = "none";
         if (
           res.data === "email already present" ||

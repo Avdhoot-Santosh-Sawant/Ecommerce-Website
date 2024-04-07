@@ -4,6 +4,7 @@ import "../component css/Carts.css";
 import Cart from "./Cart";
 import ProductData from "../json files/products.json";
 import axios from "axios";
+import config from "../config";
 
 export default function Carts(props) {
   const [auth, setAuth] = useState(JSON.parse(localStorage.getItem("auth")));
@@ -100,10 +101,7 @@ export default function Carts(props) {
       };
 
       try {
-        const res = await axios.put(
-          "https://just-poultry-things.onrender.com/carts",
-          sentPut
-        );
+        const res = await axios.put(config.path + "/carts", sentPut);
 
         if (res.body === "error occured at server side") {
           alert(res.body);
@@ -159,8 +157,7 @@ export default function Carts(props) {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl =
-            "https://just-poultry-things.onrender.com/api/payment/paymentVerify";
+          const verifyUrl = config.path + "/api/payment/paymentVerify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
           alert(data.message);
@@ -204,8 +201,7 @@ export default function Carts(props) {
     if (auth) {
       if (authData.name && authData.mobile && authData.email) {
         try {
-          const orderURL =
-            "https://just-poultry-things.onrender.com/api/payment/order";
+          const orderURL = config.path + "/api/payment/order";
           const { data } = await axios.post(orderURL, { amount: total_price });
           console.log(data);
           initPayment(data.data);

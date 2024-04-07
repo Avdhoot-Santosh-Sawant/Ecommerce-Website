@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../component css/SignIn.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import config from "../config";
 
 export default function SignIn(props) {
   const [email, setEmail] = useState("");
@@ -28,10 +29,7 @@ export default function SignIn(props) {
       loading.style.display = "grid";
 
       try {
-        const res = await axios.post(
-          "https://just-poultry-things.onrender.com/SignIn",
-          cheakUser
-        );
+        const res = await axios.post(config.path + "/SignIn", cheakUser);
         loading.style.display = "none";
         // console.log(res.data)
         if (

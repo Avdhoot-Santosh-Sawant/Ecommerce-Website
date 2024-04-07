@@ -5,6 +5,7 @@ import productData from "../json files/products.json";
 import RatingProduct from "./Rating_product";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import config from "../config";
 
 export default function ProductDetail(props) {
   const [product, setproduct] = useState({});
@@ -58,10 +59,7 @@ export default function ProductDetail(props) {
       };
 
       try {
-        const res = await axios.put(
-          "https://just-poultry-things.onrender.com/products",
-          sentPut
-        );
+        const res = await axios.put(config.path + "/products", sentPut);
 
         if (res.body === "error occured at server side") {
           alert(res.body);
