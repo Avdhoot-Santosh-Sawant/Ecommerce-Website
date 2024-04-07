@@ -72,7 +72,7 @@ const signInUser = async (data) => {
       return flag;
     }
   } catch (error) {
-    return "error occured at server side";
+    return "error occured at server side"+error;
   }
 };
 
