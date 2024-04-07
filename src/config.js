@@ -1,5 +1,5 @@
 const config = {
-  path: "https://ecommerce-website-mu-two.vercel.app",
+  path: "https://just-poultry-things.onrender.com",
 };
 
 export default config;

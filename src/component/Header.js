@@ -14,21 +14,25 @@ export default function Header(props) {
 
   useEffect(() => {
     setTimeout(() => {
-      if (window.location.pathname === "/products") {
-        document.getElementById("home").style.backgroundColor = "black";
-        document.getElementById("product").style.backgroundColor = "green";
-        document.getElementById("home-mobile").style.backgroundColor = "white";
-        document.getElementById("product-mobile").style.backgroundColor =
-          "green";
-      }
+      try {
+        if (window.location.pathname === "/products") {
+          document.getElementById("home").style.backgroundColor = "black";
+          document.getElementById("product").style.backgroundColor = "green";
+          document.getElementById("home-mobile").style.backgroundColor =
+            "white";
+          document.getElementById("product-mobile").style.backgroundColor =
+            "green";
+        }
 
-      if (window.location.pathname === "/") {
-        document.getElementById("home").style.backgroundColor = "green";
-        document.getElementById("product").style.backgroundColor = "black";
-        document.getElementById("home-mobile").style.backgroundColor = "green";
-        document.getElementById("product-mobile").style.backgroundColor =
-          "white";
-      }
+        if (window.location.pathname === "/") {
+          document.getElementById("home").style.backgroundColor = "green";
+          document.getElementById("product").style.backgroundColor = "black";
+          document.getElementById("home-mobile").style.backgroundColor =
+            "green";
+          document.getElementById("product-mobile").style.backgroundColor =
+            "white";
+        }
+      } catch {}
     }, 1000);
 
     try {
